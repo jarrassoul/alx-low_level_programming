@@ -2,6 +2,7 @@
  * File: 0-positive_or_negative.c
  * Auth: jar Rassoul
  */
+#include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
 
@@ -13,17 +14,17 @@
  */
 int main(void)
 {
-	
-	srand(time(NULL));   // Initialization, should only be called once.
-	int x = rand();
+        int n;	
+	srand(time(0));   // Initialization, should only be called once.
+        n = rand() - RAND_MAX / 2;
 
-	if (x > 0)
-		printf("%d is positive\n", x);
-	else if (x < 0)
-		printf("%d is negative\n", x);
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
 	else
-		printf("%d is zero\n", x);
-	return 0;
+		printf("%d is zero\n", n);
+	return (0);
 }
 
 
