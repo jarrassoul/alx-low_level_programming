@@ -24,7 +24,7 @@ if ((s % 10) > 5)
 	printf("Last digit of %d is %d and is greater than 5\n",
 			s, s % 10);
 }
-ielse if ((s % 10) < 6 && (s % 10) != 0)
+else if ((s % 10) < 6 && (s % 10) != 0)
 {
 	printf("Last digit of %d is %d and is less than 6 and not 0\n",
 			s, s % 10);
