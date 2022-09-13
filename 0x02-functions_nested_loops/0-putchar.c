@@ -2,18 +2,18 @@
 *File: 0-putchar.c
 *AUthor: Jar Rassoul
 */
-#include <stdio.h>
 #include <unistd.h>
-#include <sys/syscall.h>
+#include "main.h"
 /**
-*main-prints _putchar followed by new line
+*main-prints _putchar followed by new line.
+*Description : prints_putchar
 *
 *Return: Always 0.
 */
 int main(void)
 {
-	const char msg[] = "_putchar\n";
+	char word[] = "_putchar\n";
 
-syscall(SYS_write, 1, msg, 9);
-return (0);
+	write(1, word, 9);
+	return (0);
 }
